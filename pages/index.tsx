@@ -15,7 +15,7 @@ const MainPage: NextPage = () => {
         <h1>
           В Староуткинске
           <br />
-          <span className={styles['main-subtitle']}>Главное</span>
+          <span className={styles.main_subtitle}>Главное</span>
         </h1>
       </header>
 

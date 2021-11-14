@@ -10,7 +10,7 @@
   }
 }
 
-@mixin gradient-text($color) {
+@mixin gradient_text($color) {
   background: linear-gradient(
     40deg,
     color.scale($color, $lightness: 20%),
@@ -22,10 +22,10 @@
 
 .subtitle {
   text-transform: uppercase;
-  @include gradient-text(#ff6b09);
+  @include gradient_text(#ff6b09);
 }
 
-.main-subtitle {
+.main_subtitle {
   text-transform: uppercase;
-  @include gradient-text(#099dff);
+  @include gradient_text(#099dff);
 }
