@@ -1,12 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from './cinema/cinema.module.scss';
+import styles from './cinema.module.scss';
 
-const MainPage: NextPage = () => {
+const CinemaPage: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>В Староуткинске | Главное</title>
+        <title>В Староуткинске | Кино</title>
         <meta name="description" content="Кино в Староуткинске" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -15,15 +15,15 @@ const MainPage: NextPage = () => {
         <h1>
           В Староуткинске
           <br />
-          <span className={styles['main-subtitle']}>Главное</span>
+          <span className={styles.subtitle}>Кино</span>
         </h1>
       </header>
 
       <main>
-        <p>Что в&nbsp;Староуткинске главное?</p>
+        <p>Смотрите кино с&nbsp;друзьями в&nbsp;любимом поселке</p>
       </main>
     </div>
   );
 };
 
-export default MainPage;
+export default CinemaPage;

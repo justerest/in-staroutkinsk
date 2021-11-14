@@ -1,0 +1,31 @@
+@use 'sass:color';
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
+}
+
+@mixin gradient-text($color) {
+  background: linear-gradient(
+    40deg,
+    color.scale($color, $lightness: 20%),
+    color.scale($color, $lightness: -20%)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  @include gradient-text(#ff6b09);
+}
+
+.main-subtitle {
+  text-transform: uppercase;
+  @include gradient-text(#099dff);
+}
