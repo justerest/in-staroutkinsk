@@ -14,7 +14,7 @@ const CinemaPage: NextPage = () => {
       </Head>
 
       <Header>
-        <span className={styles.main}>Кино</span>
+        <span className={styles.cinema}>Кино</span>
       </Header>
 
       <main>
