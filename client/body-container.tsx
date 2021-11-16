@@ -1,19 +1,5 @@
-const BodyContainer: React.FC = (props) => (
-  <>
-    <div className="container">{props.children}</div>
+import styles from './body-container.module.scss';
 
-    <style jsx>{`
-      .container {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 0 2rem;
-
-        @media screen and (max-width: 480px) {
-          padding: 0 1rem;
-        }
-      }
-    `}</style>
-  </>
-);
+const BodyContainer: React.FC = (props) => <div className={styles.container}>{props.children}</div>;
 
 export default BodyContainer;
