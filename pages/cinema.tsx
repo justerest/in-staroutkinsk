@@ -1,28 +1,26 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import styles from './cinema.module.scss';
+import BodyContainer from 'client/body-container';
+import Header from 'client/header';
+import styles from 'styles/subtitle-colors.module.scss';
 
 const CinemaPage: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <BodyContainer>
       <Head>
         <title>В Староуткинске | Кино</title>
         <meta name="description" content="Кино в Староуткинске" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <h1>
-          В Староуткинске
-          <br />
-          <span className={styles.subtitle}>Кино</span>
-        </h1>
-      </header>
+      <Header>
+        <span className={styles.main}>Кино</span>
+      </Header>
 
       <main>
         <p>Смотрите кино с&nbsp;друзьями в&nbsp;любимом поселке</p>
       </main>
-    </div>
+    </BodyContainer>
   );
 };
 
